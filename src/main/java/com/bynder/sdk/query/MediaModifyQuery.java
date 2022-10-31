@@ -128,7 +128,7 @@ public class MediaModifyQuery {
     
     public String getArchiveDate() {
         return archiveDate;
-    }
+    } 
 
     public MediaModifyQuery setLimited(final Boolean limited) {
         this.limited = limited;
