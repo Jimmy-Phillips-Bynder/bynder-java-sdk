@@ -46,6 +46,12 @@ public class MediaModifyQuery {
      */
     @ApiField
     private Boolean archive;
+    
+     /**
+     * Date archive new value.
+     */
+    @ApiField
+    private String archiveDate;
 
     /**
      * Date published new value.
@@ -119,6 +125,10 @@ public class MediaModifyQuery {
     public String getLimitedDate() {
         return limitedDate;
     }
+    
+    public String getArchiveDate() {
+        return archiveDate;
+    }
 
     public MediaModifyQuery setLimited(final Boolean limited) {
         this.limited = limited;
@@ -127,6 +137,11 @@ public class MediaModifyQuery {
 
     public MediaModifyQuery setLimitedDate(final String limitedDate) {
         this.limitedDate = limitedDate;
+        return this;
+    }
+    
+    public MediaModifyQuery setArchiveDate(final String archiveDate) {
+        this.archiveDate = archiveDate;
         return this;
     }
 
