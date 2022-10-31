@@ -24,6 +24,7 @@ public class MediaModifyQueryTest {
     public static final String EXPECTED_MEDIA_ID = "id";
     public static final Boolean EXPECTED_LIMITED = true;
     public static final String EXPECTED_LIMITED_DATE = "2014-12-25T10:30:00Z";
+    public static final String EXPECTED_ARCHIVE_DATE = "2014-12-25T10:30:00Z";
     public static final String EXPECTED_TAGS = "tag1,tag2";
 
     @Test
@@ -34,6 +35,9 @@ public class MediaModifyQueryTest {
 
         mediaModifyQuery.setLimitedDate(EXPECTED_LIMITED_DATE);
         assertEquals(EXPECTED_LIMITED_DATE, mediaModifyQuery.getLimitedDate());
+
+        mediaModifyQuery.setArchiveDate(EXPECTED_ARCHIVE_DATE);
+        assertEquals(EXPECTED_ARCHIVE_DATE, mediaModifyQuery.getArchiveDate());
 
         mediaModifyQuery.setTags(Arrays.asList("tag1", "tag2"));
         assertEquals(EXPECTED_TAGS, mediaModifyQuery.getTags());
